@@ -58,6 +58,7 @@ p {
   height: auto;
   border-bottom: 6px solid;
   max-height: 700px;
+  object-fit: cover;
 }
 
 .container-fluid {

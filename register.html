@@ -8,26 +8,31 @@
     <title>Register</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles_log_reg.css">
 </head>
 
 <body>
-    <div class="container">
-        <h2>Register</h2>
-        <form id="registerForm">
+    <div class="container xs-3">
+        <form class="form-container" id="registerForm">
+            <h2>Registrar usuario</h2>
             <div class="form-group">
-                <label for="registerEmail">Email address</label>
-                <input type="email" class="form-control" id="registerEmail" required>
+                <label for="registerEmail"><p><i class="fa-solid fa-square-envelope"></i> Correo Electronico</p></label>
+                <input type="email" placeholder="Ejemplo@gmail.com" class="form-control" id="registerEmail" required>
             </div>
             <div class="form-group">
-                <label for="registerPassword">Password</label>
-                <input type="password" class="form-control" id="registerPassword" required>
+                <label for="registerPassword"><p><i class="fa-solid fa-key"></i> Contraseña</p></label>
+                <input type="password" placeholder="Ejemplo123" class="form-control" id="registerPassword" required>
             </div>
-            <button type="submit" class="btn btn-primary">Register</button>
-            <button type="button" class="btn btn-secondary b-back">Atras</button>
-
+            <div class="mt-2 ">
+                <div class="row">
+            <button type="submit" class="btn btn-primary btn-sm m-1"><p>Registrar</p></button>
+            <button type="button" class="btn btn-secondary b-back btn-sm m-1"><p>Atras</p></button>
+                </div>
+            </div>  
         </form>
     </div>
+
+    <script src="https://kit.fontawesome.com/4fc1358b00.js" crossorigin="anonymous"></script>
     <script src="./assets/js/scripts.js"></script>
     <script src="./assets/js/auth.js"></script>
 </body>

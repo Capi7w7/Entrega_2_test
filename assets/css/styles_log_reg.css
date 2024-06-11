@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+h2{
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    backdrop-filter: blur(15px);
+    background-image: url(/assets/img/bakground-login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150vh;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    g {
+      mix-blend-mode: lighten;
+    }
+    polygon {
+      stroke: none;
+      fill: white;
+    }
+}
+.container{
+    padding: 0;
+    background-color: #0f0808;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgb(0, 0,0,0.35);
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    height: 560px;
+}
+
+.container p{
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 10px 0;
+}
+
+.container button {
+    background-color: rgb(23, 37, 49);
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 45px;
+    object-fit: contain;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+
+.container form{
+    background-color: rgb(209, 225, 238);
+    background: linear-gradient(to right, #f7f3f3,rgb(157, 207, 248));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1px;
+    height: 100%;
+}
+
+
+
+
+.container input {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+

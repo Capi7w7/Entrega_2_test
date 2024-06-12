@@ -5,7 +5,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: rgb(157, 207, 248);
+  background-color: rgb(209, 225, 238);
+  background: linear-gradient(to right, #f7f3f3,rgb(157, 207, 248));
 }
 
 a {
@@ -95,6 +96,8 @@ h3 {
 .card img {
   border-radius: 4%;
   margin-top: 1rem;
+  max-height: 700px;
+  min-height: 200px;
 }
 
 

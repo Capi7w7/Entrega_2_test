@@ -1,40 +1,39 @@
 // assets/js/auth.js
+$(document).ready(function() {
+    const registerForm = $('#registerForm');
+    const loginForm = $('#loginForm');
+    const registerEmailInput = $('#registerEmail');
+    const registerPasswordInput = $('#registerPassword');
+    const loginEmailInput = $('#loginEmail');
+    const loginPasswordInput = $('#loginPassword');
+    const backButton = $('.b-back');
 
-document.addEventListener('DOMContentLoaded', () => {
-    const registerForm = document.getElementById('registerForm');
-    const loginForm = document.getElementById('loginForm');
-    const registerEmailInput = document.getElementById('registerEmail');
-    const registerPasswordInput = document.getElementById('registerPassword');
-    const loginEmailInput = document.getElementById('loginEmail');
-    const loginPasswordInput = document.getElementById('loginPassword');
-    const backButton = document.querySelector('.b-back');
-
-    if (registerForm) {
-        registerForm.addEventListener('submit', (e) => {
+    if (registerForm.length) {
+        registerForm.on('submit', function(e) {
             e.preventDefault();
-            const email = registerEmailInput.value;
-            const password = registerPasswordInput.value;
+            const email = registerEmailInput.val();
+            const password = registerPasswordInput.val();
             // Add your registration logic here
             console.log('Register:', { email, password });
             // Consider using a more user-friendly notification system
-            alert('Registration successful!');
+            alert('Registro exitoso!');
         });
     }
 
-    if (loginForm) {
-        loginForm.addEventListener('submit', (e) => {
+    if (loginForm.length) {
+        loginForm.on('submit', function(e) {
             e.preventDefault();
-            const email = loginEmailInput.value;
-            const password = loginPasswordInput.value;
+            const email = loginEmailInput.val();
+            const password = loginPasswordInput.val();
             // Add your login logic here
             console.log('Login:', { email, password });
             // Consider using a more user-friendly notification system
-            alert('Login successful!');
+            alert('Login exitoso!');
         });
     }
 
-    if (backButton) {
-        backButton.addEventListener('click', (e) => {
+    if (backButton.length) {
+        backButton.on('click', function(e) {
             e.preventDefault();
             window.history.back();
         });

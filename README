@@ -1,0 +1,8 @@
+### INSTRUCCIONES PARA EJECUTAR EL PROYECTO
+
+- Clonar el repositorio
+- Entrar en la carpeta API con el comando `cd API`
+- Ejecutar el comando `npm install`
+- Ejecutar el comando `npm start`
+- Ejecutar el archivo `index.html` con Live Server
+- Abrir el navegador en la dirección `http://localhost:3001`
